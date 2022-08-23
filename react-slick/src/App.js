@@ -1,9 +1,10 @@
 import "./App.css";
+import Carousel from "./Carousel";
 
 function App() {
   return (
     <div className="App">
-      <div>React-Slick</div>
+      <Carousel />
     </div>
   );
 }
