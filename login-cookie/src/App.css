@@ -1,0 +1,28 @@
+body{
+  padding: 50px;
+}
+.btn{
+  background-color: rgba(36, 41, 44, 0.9);
+  border: none;
+  text-align: center;
+  padding: 14px;
+  border-radius: 4px;
+  color: white;
+}
+
+.input{
+  background: rgba(241, 241, 241, .7);
+
+  padding: 14px;
+  border-radius: 4px;;
+  border: 0;
+  color: #3E3E3E;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
+
+.container{
+  text-align: center;
+}
