@@ -1,9 +1,9 @@
 import "./App.css";
-
+import Slideshow from "./Sildeshow";
 function App() {
   return (
     <div className="App">
-      <h2>React-slick</h2>
+      <Slideshow />
     </div>
   );
 }
