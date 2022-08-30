@@ -1,11 +1,11 @@
 import "./App.css";
+import Carousel from "./Carosel";
 
 function App() {
   return (
     <div className="App">
-      <h1></h1>
+      <Carousel />
     </div>
   );
 }
-
 export default App;
