@@ -18,7 +18,7 @@ const App = () => {
     if (setName == data.name && setPwd == data.passward) {
       console.log("Login Successfully...");
     } else {
-      console.log("Logout Successfully...");
+      console.log("Please login...");
     }
   };
 
