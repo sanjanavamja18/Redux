@@ -10,6 +10,7 @@ const App = () => {
   const secret = "secret";
 
   const handle = () => {
+    setInterval(0);
     setCookie("Name", name, { path: "/" });
     setCookie("Password", pwd, { path: "/" });
     setToken(jwt);
