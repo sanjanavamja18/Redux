@@ -10,6 +10,7 @@ const App = () => {
   const secret = "secret";
 
   const handle = () => {
+    setInterval(0);
     setCookie("Name", name, { path: "/" });
     setCookie("Password", pwd, { path: "/" });
     setToken(jwt);
@@ -18,7 +19,7 @@ const App = () => {
     if (setName == data.name && setPwd == data.passward) {
       console.log("Login Successfully...");
     } else {
-      console.log("Logout Successfully...");
+      console.log("Please login...");
     }
   };
 

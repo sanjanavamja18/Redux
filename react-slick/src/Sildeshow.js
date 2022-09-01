@@ -1,7 +1,10 @@
 import "./Slideshow.css";
 import React from "react";
+import Img1 from "./Img1";
+import Img2 from "./Img2";
+import Img3 from "./Img3";
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const colors = [Img1, Img2, Img3];
 const delay = 2500;
 
 function Slideshow() {
@@ -36,7 +39,9 @@ function Slideshow() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, index) => (
-          <div className="slide" key={index} style={{ backgroundColor }}></div>
+          <div className="slide" key={index} style={{ backgroundColor }}>
+            <img src="" alt="Pariss" />
+          </div>
         ))}
       </div>
 
