@@ -5,10 +5,23 @@ import image1 from "./assets/img1.jpeg";
 import image2 from "./assets/img2.jpeg";
 import image3 from "./assets/img3.jpeg";
 import "./Carosel.css";
-import { useState } from "react";
+import React from "react";
+import { useEffect } from "react";
 
-const Carousel = () => {
-  const [current, setCurrent] = useState("0");
+const images = [image1, image2, image3];
+const delay = 2500;
+
+function Carousel() {
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+  });
 
   return (
     <div style={{ margin: "30px" }}>
@@ -38,6 +51,6 @@ const Carousel = () => {
       </Slider>
     </div>
   );
-};
+}
 
 export default Carousel;
