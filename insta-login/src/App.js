@@ -1,7 +1,14 @@
 import "./App.css";
+import Login from "./component/Login";
 
 function App() {
-  return <div></div>;
+  return (
+    <div className="App">
+      <div>
+        <Login />
+      </div>
+    </div>
+  );
 }
 
 export default App;
